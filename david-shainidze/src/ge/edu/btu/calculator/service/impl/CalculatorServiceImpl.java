@@ -11,12 +11,18 @@ public class CalculatorServiceImpl implements CalculatorService {
         System.out.println(x + y);
     }
     public void divide(int x, int y) {
-        if (y == 0) System.out.println("Zero Division Error <3");
-        else System.out.println(x / y);
+        try {
+            System.out.println(x / y);
+        } catch (ArithmeticException AE) {
+            System.out.println(AE.toString());
+        }
     }
     public void divide(float x, float y) {
-        if (y == 0) System.out.println("Zero Division Error <3");
-        else System.out.println(x / y);
+        try {
+            System.out.println(x / y);
+        } catch (ArithmeticException AE) {
+            System.out.println(AE.toString());
+        }
     }
     public void diff(int x, int y) {
         System.out.println(x - y);
