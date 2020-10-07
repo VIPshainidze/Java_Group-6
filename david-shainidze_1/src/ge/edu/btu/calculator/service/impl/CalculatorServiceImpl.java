@@ -21,7 +21,7 @@ public class CalculatorServiceImpl implements CalculatorService {
             System.out.println(x / y);
         } catch (ArithmeticException AE) {
             System.out.println(AE.toString());
-            logger.error("User don't know math fundamentals: :(( Zero Division Error");
+            logger.error("User doesn't know math fundamentals: :(( Zero Division Error");
         }
     }
     public void divide(float x, float y) {
@@ -30,7 +30,7 @@ public class CalculatorServiceImpl implements CalculatorService {
             System.out.println(x / y);
         } catch (ArithmeticException AE) {
             System.out.println(AE.toString());
-            logger.error("User don't know math fundamentals: :(( Zero Division Error");
+            logger.error("User doesn't know math fundamentals: :(( Zero Division Error");
         }
     }
     public void diff(int x, int y) {
